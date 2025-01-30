@@ -4,17 +4,6 @@ This repository contains both the **frontend** and **backend** components for a 
 
 ---
 
-## **Repository Structure**
-
-\```
-domain-price-comparator/
-├── domain-compare-frontend/          # React frontend application
-├── domain-compare-backend/           # Express and Puppeteer backend server
-└── README.md          # This file
-\```
-
----
-
 ## **Frontend**
 
 ### **Overview**
