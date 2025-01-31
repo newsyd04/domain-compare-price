@@ -105,11 +105,15 @@ async function getRegister365Price(domain, extension) {
     const browser = await puppeteer.launch({
         headless: true,
         args: [
-            '--disable-blink-features=AutomationControlled',
-            '--no-sandbox',
-            '--disable-setuid-sandbox',
+          '--no-sandbox',
+          '--disable-setuid-sandbox',
+          '--disable-dev-shm-usage',
+          '--disable-gpu',
+          '--disable-software-rasterizer',
+          '--no-zygote',
+          '--single-process',
         ],
-    });
+    });      
 
     const page = await browser.newPage();
 
